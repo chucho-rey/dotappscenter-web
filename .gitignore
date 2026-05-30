@@ -1,0 +1,5 @@
+# Sitio estático — sin build
+.DS_Store
+node_modules/
+.vscode/
+.idea/

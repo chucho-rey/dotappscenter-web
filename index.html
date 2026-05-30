@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotAppsCenter — Apps minimalistas</title>
+  <meta name="description" content="DotAppsCenter crea apps Android minimalistas con estética Nothing: monocromo, dot-matrix y diseño esencial." />
+
+  <!-- Fuentes: DotGothic16 (dot-matrix) + Space Grotesk — ambas SIL OFL -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="dots" aria-hidden="true">
+          <span class="on"></span><span class="on"></span><span></span><span class="on"></span>
+        </span>
+        DotAppsCenter
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#apps">Apps</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO / INICIO ============ -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <p class="eyebrow">Apps Android · Estética Nothing</p>
+        <h1 class="display">
+          Diseño que se<br /><span class="accent">reduce</span> a lo esencial.
+        </h1>
+        <p>
+          En DotAppsCenter construimos aplicaciones minimalistas: negro OLED,
+          tipografía dot-matrix y un único acento rojo. Nada de ruido, solo lo que importa.
+        </p>
+        <div class="hero-cta">
+          <a href="#apps" class="btn btn-primary">Ver nuestras apps</a>
+          <a href="#nosotros" class="btn btn-ghost">Conócenos</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="stat"><div class="num">2</div><div class="lbl">apps publicadas</div></div>
+          <div class="stat"><div class="num">100%</div><div class="lbl">offline · sin anuncios</div></div>
+          <div class="stat"><div class="num">OLED</div><div class="lbl">negro puro nativo</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPS ============ -->
+    <section id="apps">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Nuestras apps</p>
+          <h2 class="section-title">Hechas con el mismo lenguaje</h2>
+          <p class="muted">Una familia coherente de herramientas diarias, todas siguiendo el Dot Design System.</p>
+        </div>
+
+        <div class="apps-grid">
+          <!-- DotNotes -->
+          <article class="app-card">
+            <div class="app-icon">
+              <svg viewBox="0 0 108 108" aria-hidden="true">
+                <path d="M37,28 L62,28 L73,39 L73,80 L37,80 Z" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+                <path d="M62,28 L62,39 L73,39" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+                <path d="M45,50 L61,50" stroke="#ed1c24" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M45,60 L65,60 M45,68 L65,68 M45,76 L57,76" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>DotNotes</h3>
+            <p>Notas minimalistas con Markdown, categorías, checklists, búsqueda y widget. Tus ideas, sin distracciones.</p>
+            <div class="tags">
+              <span class="tag">Notas</span>
+              <span class="tag">Markdown</span>
+              <span class="tag">Offline</span>
+              <span class="tag">Widget</span>
+            </div>
+            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> Próximamente en Play Store</span>
+          </article>
+
+          <!-- DotPodómetro -->
+          <article class="app-card">
+            <div class="app-icon">
+              <svg viewBox="0 0 108 108" aria-hidden="true">
+                <g transform="translate(21.6,21.6) scale(2.7)">
+                  <path fill="#fff" d="M13.5,5.5c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM9.8,8.9L7,23h2.1l1.8,-8 2.1,2v6h2v-7.5l-2.1,-2 0.6,-3C14.8,12 16.8,13 19,13v-2c-1.9,0 -3.5,-1 -4.3,-2.4l-1,-1.6C13.3,7.8 12.7,7.4 12,7.4c-0.3,0 -0.5,0.1 -0.8,0.1L6,9.3V13h2V10.6l1.8,-0.7"/>
+                </g>
+              </svg>
+            </div>
+            <h3>DotPodómetro</h3>
+            <p>Registra caminatas, carreras y rutas en bici con GPS, mapa en tiempo real y estadísticas. Todo local en tu dispositivo.</p>
+            <div class="tags">
+              <span class="tag">Fitness</span>
+              <span class="tag">GPS</span>
+              <span class="tag">Rutas</span>
+              <span class="tag">Stats</span>
+            </div>
+            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> Próximamente en Play Store</span>
+          </article>
+
+          <!-- Próxima app -->
+          <article class="app-card">
+            <div class="app-icon">
+              <svg viewBox="0 0 108 108" aria-hidden="true">
+                <path d="M54,32 V76 M32,54 H76" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Más en camino</h3>
+            <p>Estamos diseñando nuevas herramientas con el mismo principio: minimalismo radical y foco total en el usuario.</p>
+            <div class="tags">
+              <span class="tag">En desarrollo</span>
+            </div>
+            <span class="badge-soon">Pronto</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section id="nosotros">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow">Nosotros</p>
+            <h2 class="section-title">Menos, pero mejor.</h2>
+            <p class="muted" style="margin-bottom:24px">
+              DotAppsCenter es un estudio independiente enfocado en apps Android
+              que respetan tu atención y tu privacidad. Nos inspira el lenguaje de
+              Nothing: monocromo, puntos y precisión.
+            </p>
+            <p class="muted">
+              Cada app de la familia comparte el mismo sistema de diseño —negro OLED,
+              dot-matrix y un solo acento rojo— para que se sientan como hermanas.
+              Sin anuncios, sin rastreo, con tus datos siempre en tu dispositivo.
+            </p>
+          </div>
+
+          <div class="values">
+            <div class="value">
+              <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
+              <div><h4>Minimalismo</h4><p>Si un elemento no es contenido ni navegación, sobra. Quitamos antes de añadir.</p></div>
+            </div>
+            <div class="value">
+              <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
+              <div><h4>Privacidad</h4><p>Tus datos viven en tu teléfono. Sin nube obligatoria, sin anuncios, sin rastreo.</p></div>
+            </div>
+            <div class="value">
+              <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
+              <div><h4>Coherencia</h4><p>Un único lenguaje visual en toda la familia: aprendes una, las conoces todas.</p></div>
+            </div>
+            <div class="value">
+              <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
+              <div><h4>Detalle</h4><p>Tipografía dot-matrix, animaciones precisas y negro OLED real. El detalle es la marca.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto">
+      <div class="container">
+        <div class="contact-card">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section-title" style="margin-bottom:8px">¿Sugerencias o errores?</h2>
+          <p class="muted">Escríbenos. Leemos cada mensaje.</p>
+          <!-- TODO: reemplazar por el correo de soporte real -->
+          <a class="email" id="contactEmail" href="mailto:contacto@dotappscenter.com">contacto@dotappscenter.com</a>
+          <div>
+            <a class="btn btn-primary" id="contactBtn" href="mailto:contacto@dotappscenter.com?subject=Contacto%20%C2%B7%20DotAppsCenter">Enviar correo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand" style="font-size:1rem">
+        <span class="dots" aria-hidden="true"><span class="on"></span><span class="on"></span><span></span><span class="on"></span></span>
+        DotAppsCenter
+      </div>
+      <div>© <span id="year"></span> DotAppsCenter · Apps minimalistas para Android</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
