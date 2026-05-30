@@ -16,57 +16,66 @@
     .legal p, .legal li { color: var(--dot-white-60); margin-bottom: 12px; }
     .legal ul { padding-left: 22px; }
     .legal a { color: var(--dot-red); }
-    .legal .back { display: inline-block; margin-bottom: 32px; color: var(--dot-white-60); }
+    .legal-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+    .legal-top .back { color: var(--dot-white-60); }
   </style>
 </head>
-<body>
+<body data-title-key="pv.meta.title">
   <div class="container legal">
-    <a class="back" href="index.html">← DotAppsCenter</a>
-    <p class="eyebrow">Legal</p>
-    <h1>Política de Privacidad</h1>
-    <p class="muted">Aplica a las apps de DotAppsCenter: <strong>DotNotes</strong> y <strong>DotPodómetro</strong>.<br/>Última actualización: 29 de mayo de 2026.</p>
+    <div class="legal-top">
+      <a class="back" href="index.html" data-i18n="pv.back">← DotAppsCenter</a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es">ES</button><span aria-hidden="true">/</span><button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
 
-    <h2>Resumen</h2>
-    <p>
+    <p class="eyebrow" data-i18n="pv.eyebrow">Legal</p>
+    <h1 data-i18n="pv.title">Política de Privacidad</h1>
+    <p class="muted" data-i18n="pv.intro">Aplica a las apps de DotAppsCenter: <strong>DotNotes</strong> y <strong>DotPodómetro</strong>.<br/>Última actualización: 29 de mayo de 2026.</p>
+
+    <h2 data-i18n="pv.h.summary">Resumen</h2>
+    <p data-i18n="pv.summary">
       En DotAppsCenter diseñamos apps que respetan tu privacidad. <strong>No recopilamos,
       transmitimos ni vendemos tus datos personales.</strong> Todo lo que creas o registras
       se guarda únicamente en tu dispositivo. No usamos anuncios, ni rastreo, ni analítica de terceros.
     </p>
 
-    <h2>Datos que se almacenan (solo en tu dispositivo)</h2>
+    <h2 data-i18n="pv.h.data">Datos que se almacenan (solo en tu dispositivo)</h2>
     <ul>
-      <li><strong>DotNotes:</strong> tus notas, listas y categorías se guardan localmente. Las copias de seguridad
+      <li data-i18n="pv.data.notes"><strong>DotNotes:</strong> tus notas, listas y categorías se guardan localmente. Las copias de seguridad
         (exportar/importar) las controlas tú: el archivo se guarda donde elijas mediante el selector del sistema.</li>
-      <li><strong>DotPodómetro:</strong> tus actividades (tipo, distancia, duración y ruta GPS) se guardan localmente.
+      <li data-i18n="pv.data.podo"><strong>DotPodómetro:</strong> tus actividades (tipo, distancia, duración y ruta GPS) se guardan localmente.
         La ubicación se usa <strong>solo durante el seguimiento que tú inicias</strong>, para calcular tu recorrido,
         y <strong>nunca sale de tu dispositivo</strong>.</li>
     </ul>
 
-    <h2>Permisos</h2>
+    <h2 data-i18n="pv.h.perms">Permisos</h2>
     <ul>
-      <li><strong>Ubicación (DotPodómetro):</strong> necesaria para registrar distancia y ruta durante una actividad.
+      <li data-i18n="pv.perm.loc"><strong>Ubicación (DotPodómetro):</strong> necesaria para registrar distancia y ruta durante una actividad.
         Solo se usa en primer plano, mientras el seguimiento está activo.</li>
-      <li><strong>Notificaciones:</strong> para mostrar el seguimiento en curso.</li>
-      <li><strong>Internet (DotPodómetro):</strong> únicamente para descargar las teselas del mapa.</li>
+      <li data-i18n="pv.perm.notif"><strong>Notificaciones:</strong> para mostrar el seguimiento en curso.</li>
+      <li data-i18n="pv.perm.net"><strong>Internet (DotPodómetro):</strong> únicamente para descargar las teselas del mapa.</li>
     </ul>
 
-    <h2>Servicios de terceros</h2>
-    <p>
+    <h2 data-i18n="pv.h.third">Servicios de terceros</h2>
+    <p data-i18n="pv.third">
       DotPodómetro muestra mapas mediante <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
       Para dibujar el mapa, la app descarga imágenes (teselas) de sus servidores, lo que implica enviarles
       tu dirección IP y la zona del mapa solicitada, según su propia política. No compartimos con ellos
       ningún otro dato tuyo.
     </p>
 
-    <h2>Niños</h2>
-    <p>Nuestras apps no están dirigidas a menores de 13 años y no recopilan datos de ellos.</p>
+    <h2 data-i18n="pv.h.kids">Niños</h2>
+    <p data-i18n="pv.kids">Nuestras apps no están dirigidas a menores de 13 años y no recopilan datos de ellos.</p>
 
-    <h2>Cambios</h2>
-    <p>Si actualizamos esta política, publicaremos la nueva versión en esta página con su fecha.</p>
+    <h2 data-i18n="pv.h.changes">Cambios</h2>
+    <p data-i18n="pv.changes">Si actualizamos esta política, publicaremos la nueva versión en esta página con su fecha.</p>
 
-    <h2>Contacto</h2>
+    <h2 data-i18n="pv.h.contact">Contacto</h2>
     <!-- TODO: reemplazar por el correo de soporte real -->
-    <p>Para cualquier consulta sobre privacidad: <a href="mailto:contacto@dotappscenter.com">contacto@dotappscenter.com</a></p>
+    <p data-i18n="pv.contact">Para cualquier consulta sobre privacidad: <a href="mailto:contacto@dotappscenter.com">contacto@dotappscenter.com</a></p>
   </div>
+
+  <script src="js/i18n.js"></script>
 </body>
 </html>

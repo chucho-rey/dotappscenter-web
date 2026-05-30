@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body data-title-key="meta.title">
 
   <!-- ============ NAV ============ -->
   <header class="nav">
@@ -25,16 +25,21 @@
         DotAppsCenter
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#inicio">Inicio</a>
-        <a href="#apps">Apps</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#apps" data-i18n="nav.apps">Apps</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Menú">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
-        </svg>
-      </button>
+      <div class="nav-right">
+        <div class="lang" id="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es">ES</button><span aria-hidden="true">/</span><button type="button" data-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -42,23 +47,23 @@
     <!-- ============ HERO / INICIO ============ -->
     <section id="inicio" class="hero">
       <div class="container">
-        <p class="eyebrow">Apps Android · Estética Nothing</p>
-        <h1 class="display">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Apps Android · Estética Nothing</p>
+        <h1 class="display" data-i18n="hero.title">
           Diseño que se<br /><span class="accent">reduce</span> a lo esencial.
         </h1>
-        <p>
+        <p data-i18n="hero.desc">
           En DotAppsCenter construimos aplicaciones minimalistas: negro OLED,
           tipografía dot-matrix y un único acento rojo. Nada de ruido, solo lo que importa.
         </p>
         <div class="hero-cta">
-          <a href="#apps" class="btn btn-primary">Ver nuestras apps</a>
-          <a href="#nosotros" class="btn btn-ghost">Conócenos</a>
+          <a href="#apps" class="btn btn-primary" data-i18n="hero.cta1">Ver nuestras apps</a>
+          <a href="#nosotros" class="btn btn-ghost" data-i18n="hero.cta2">Conócenos</a>
         </div>
 
         <div class="hero-meta">
-          <div class="stat"><div class="num">2</div><div class="lbl">apps publicadas</div></div>
-          <div class="stat"><div class="num">100%</div><div class="lbl">offline · sin anuncios</div></div>
-          <div class="stat"><div class="num">OLED</div><div class="lbl">negro puro nativo</div></div>
+          <div class="stat"><div class="num">2</div><div class="lbl" data-i18n="hero.stat1">apps publicadas</div></div>
+          <div class="stat"><div class="num">100%</div><div class="lbl" data-i18n="hero.stat2">offline · sin anuncios</div></div>
+          <div class="stat"><div class="num">OLED</div><div class="lbl" data-i18n="hero.stat3">negro OLED puro</div></div>
         </div>
       </div>
     </section>
@@ -67,9 +72,9 @@
     <section id="apps">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Nuestras apps</p>
-          <h2 class="section-title">Hechas con el mismo lenguaje</h2>
-          <p class="muted">Una familia coherente de herramientas diarias, todas siguiendo el Dot Design System.</p>
+          <p class="eyebrow" data-i18n="apps.eyebrow">Nuestras apps</p>
+          <h2 class="section-title" data-i18n="apps.title">Hechas con el mismo lenguaje</h2>
+          <p class="muted" data-i18n="apps.subtitle">Una familia coherente de herramientas diarias, todas siguiendo el Dot Design System.</p>
         </div>
 
         <div class="apps-grid">
@@ -84,14 +89,13 @@
               </svg>
             </div>
             <h3>DotNotes</h3>
-            <p>Notas minimalistas con Markdown, categorías, checklists, búsqueda y widget. Tus ideas, sin distracciones.</p>
+            <p data-i18n="apps.notes.desc">Notas minimalistas con Markdown, categorías, checklists, búsqueda y widget. Tus ideas, sin distracciones.</p>
             <div class="tags">
-              <span class="tag">Notas</span>
               <span class="tag">Markdown</span>
               <span class="tag">Offline</span>
               <span class="tag">Widget</span>
             </div>
-            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> Próximamente en Play Store</span>
+            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> <span data-i18n="apps.badge.soon">Próximamente en Play Store</span></span>
           </article>
 
           <!-- DotPodómetro -->
@@ -104,14 +108,13 @@
               </svg>
             </div>
             <h3>DotPodómetro</h3>
-            <p>Registra caminatas, carreras y rutas en bici con GPS, mapa en tiempo real y estadísticas. Todo local en tu dispositivo.</p>
+            <p data-i18n="apps.podo.desc">Registra caminatas, carreras y rutas en bici con GPS, mapa en tiempo real y estadísticas. Todo local en tu dispositivo.</p>
             <div class="tags">
               <span class="tag">Fitness</span>
               <span class="tag">GPS</span>
-              <span class="tag">Rutas</span>
               <span class="tag">Stats</span>
             </div>
-            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> Próximamente en Play Store</span>
+            <span class="badge-soon"><span class="dot-pulse"><span></span><span></span><span></span></span> <span data-i18n="apps.badge.soon">Próximamente en Play Store</span></span>
           </article>
 
           <!-- Próxima app -->
@@ -121,12 +124,12 @@
                 <path d="M54,32 V76 M32,54 H76" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3>Más en camino</h3>
-            <p>Estamos diseñando nuevas herramientas con el mismo principio: minimalismo radical y foco total en el usuario.</p>
+            <h3 data-i18n="apps.soon.title">Más en camino</h3>
+            <p data-i18n="apps.soon.desc">Estamos diseñando nuevas herramientas con el mismo principio: minimalismo radical y foco total en el usuario.</p>
             <div class="tags">
-              <span class="tag">En desarrollo</span>
+              <span class="tag" data-i18n="apps.soon.tag">En desarrollo</span>
             </div>
-            <span class="badge-soon">Pronto</span>
+            <span class="badge-soon" data-i18n="apps.soon.badge">Pronto</span>
           </article>
         </div>
       </div>
@@ -137,14 +140,14 @@
       <div class="container">
         <div class="about-grid">
           <div>
-            <p class="eyebrow">Nosotros</p>
-            <h2 class="section-title">Menos, pero mejor.</h2>
-            <p class="muted" style="margin-bottom:24px">
+            <p class="eyebrow" data-i18n="about.eyebrow">Nosotros</p>
+            <h2 class="section-title" data-i18n="about.title">Menos, pero mejor.</h2>
+            <p class="muted" style="margin-bottom:24px" data-i18n="about.p1">
               DotAppsCenter es un estudio independiente enfocado en apps Android
               que respetan tu atención y tu privacidad. Nos inspira el lenguaje de
               Nothing: monocromo, puntos y precisión.
             </p>
-            <p class="muted">
+            <p class="muted" data-i18n="about.p2">
               Cada app de la familia comparte el mismo sistema de diseño —negro OLED,
               dot-matrix y un solo acento rojo— para que se sientan como hermanas.
               Sin anuncios, sin rastreo, con tus datos siempre en tu dispositivo.
@@ -154,19 +157,19 @@
           <div class="values">
             <div class="value">
               <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
-              <div><h4>Minimalismo</h4><p>Si un elemento no es contenido ni navegación, sobra. Quitamos antes de añadir.</p></div>
+              <div><h4 data-i18n="about.v1t">Minimalismo</h4><p data-i18n="about.v1d">Si un elemento no es contenido ni navegación, sobra. Quitamos antes de añadir.</p></div>
             </div>
             <div class="value">
               <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
-              <div><h4>Privacidad</h4><p>Tus datos viven en tu teléfono. Sin nube obligatoria, sin anuncios, sin rastreo.</p></div>
+              <div><h4 data-i18n="about.v2t">Privacidad</h4><p data-i18n="about.v2d">Tus datos viven en tu teléfono. Sin nube obligatoria, sin anuncios, sin rastreo.</p></div>
             </div>
             <div class="value">
               <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
-              <div><h4>Coherencia</h4><p>Un único lenguaje visual en toda la familia: aprendes una, las conoces todas.</p></div>
+              <div><h4 data-i18n="about.v3t">Coherencia</h4><p data-i18n="about.v3d">Un único lenguaje visual en toda la familia: aprendes una, las conoces todas.</p></div>
             </div>
             <div class="value">
               <span class="dots v-dot" aria-hidden="true"><span class="on"></span></span>
-              <div><h4>Detalle</h4><p>Tipografía dot-matrix, animaciones precisas y negro OLED real. El detalle es la marca.</p></div>
+              <div><h4 data-i18n="about.v4t">Detalle</h4><p data-i18n="about.v4d">Tipografía dot-matrix, animaciones precisas y negro OLED real. El detalle es la marca.</p></div>
             </div>
           </div>
         </div>
@@ -177,13 +180,13 @@
     <section id="contacto">
       <div class="container">
         <div class="contact-card">
-          <p class="eyebrow">Contacto</p>
-          <h2 class="section-title" style="margin-bottom:8px">¿Sugerencias o errores?</h2>
-          <p class="muted">Escríbenos. Leemos cada mensaje.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 class="section-title" style="margin-bottom:8px" data-i18n="contact.title">¿Sugerencias o errores?</h2>
+          <p class="muted" data-i18n="contact.sub">Escríbenos. Leemos cada mensaje.</p>
           <!-- TODO: reemplazar por el correo de soporte real -->
           <a class="email" id="contactEmail" href="mailto:contacto@dotappscenter.com">contacto@dotappscenter.com</a>
           <div>
-            <a class="btn btn-primary" id="contactBtn" href="mailto:contacto@dotappscenter.com?subject=Contacto%20%C2%B7%20DotAppsCenter">Enviar correo</a>
+            <a class="btn btn-primary" id="contactBtn" href="mailto:contacto@dotappscenter.com?subject=Contacto%20%C2%B7%20DotAppsCenter" data-i18n="contact.btn">Enviar correo</a>
           </div>
         </div>
       </div>
@@ -197,10 +200,11 @@
         <span class="dots" aria-hidden="true"><span class="on"></span><span class="on"></span><span></span><span class="on"></span></span>
         DotAppsCenter
       </div>
-      <div>© <span id="year"></span> DotAppsCenter · Apps minimalistas para Android</div>
+      <div>© <span id="year"></span> DotAppsCenter · <span data-i18n="footer.tagline">Apps minimalistas para Android</span></div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
