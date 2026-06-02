@@ -1,6 +1,6 @@
 # DotWeb — Sitio web de DotAppsCenter
 
-Sitio estático (HTML/CSS/JS, sin dependencias ni build) con la estética **Dot/Nothing**
+Sitio estático (HTML/CSS/JS, sin dependencias ni build) con la estética **Dot**
 (monocromo + acento rojo, dot-matrix), alineado con el [DESIGN_SYSTEM.md](../DESIGN_SYSTEM.md) de las apps.
 
 **Desplegado en:** https://dotappscenter.netlify.app/

@@ -251,6 +251,9 @@ footer {
   flex-wrap: wrap; gap: var(--s-4);
   color: var(--dot-white-40); font-size: 0.85rem;
 }
+.footer-links { display: flex; gap: var(--s-6); flex-wrap: wrap; }
+.footer-links a { color: var(--dot-white-60); transition: color 0.15s; }
+.footer-links a:hover { color: var(--dot-white); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 760px) {

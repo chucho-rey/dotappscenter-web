@@ -5,19 +5,19 @@
 const I18N = {
   es: {
     "meta.title": "DotAppsCenter — Apps minimalistas",
-    "meta.desc": "DotAppsCenter crea apps Android minimalistas con estética Nothing: monocromo, dot-matrix y diseño esencial.",
+    "meta.desc": "DotAppsCenter crea apps Android minimalistas: monocromo, dot-matrix, negro OLED y un único acento rojo. Offline y sin anuncios.",
 
     "nav.home": "Inicio",
     "nav.apps": "Apps",
     "nav.about": "Nosotros",
     "nav.contact": "Contacto",
 
-    "hero.eyebrow": "Apps Android · Estética Nothing",
+    "hero.eyebrow": "Apps Android · Diseño minimalista",
     "hero.title": 'Diseño que se<br /><span class="accent">reduce</span> a lo esencial.',
     "hero.desc": "En DotAppsCenter construimos aplicaciones minimalistas: negro OLED, tipografía dot-matrix y un único acento rojo. Nada de ruido, solo lo que importa.",
     "hero.cta1": "Ver nuestras apps",
     "hero.cta2": "Conócenos",
-    "hero.stat1": "apps publicadas",
+    "hero.stat1": "apps en la familia",
     "hero.stat2": "offline · sin anuncios",
     "hero.stat3": "negro OLED puro",
 
@@ -26,6 +26,7 @@ const I18N = {
     "apps.subtitle": "Una familia coherente de herramientas diarias, todas siguiendo el Dot Design System.",
     "apps.notes.desc": "Notas minimalistas con Markdown, categorías, checklists, búsqueda y widget. Tus ideas, sin distracciones.",
     "apps.podo.desc": "Registra caminatas, carreras y rutas en bici con GPS, mapa en tiempo real y estadísticas. Todo local en tu dispositivo.",
+    "apps.pdf.desc": "Visor de PDF minimalista: abre al instante, zoom, búsqueda y vínculos. Todo local, sin anuncios ni telemetría.",
     "apps.soon.title": "Más en camino",
     "apps.soon.desc": "Estamos diseñando nuevas herramientas con el mismo principio: minimalismo radical y foco total en el usuario.",
     "apps.soon.tag": "En desarrollo",
@@ -34,7 +35,7 @@ const I18N = {
 
     "about.eyebrow": "Nosotros",
     "about.title": "Menos, pero mejor.",
-    "about.p1": "DotAppsCenter es un estudio independiente enfocado en apps Android que respetan tu atención y tu privacidad. Nos inspira el lenguaje de Nothing: monocromo, puntos y precisión.",
+    "about.p1": "DotAppsCenter es un estudio independiente enfocado en apps Android que respetan tu atención y tu privacidad. Nuestro lenguaje visual es monocromo, dot-matrix y preciso.",
     "about.p2": "Cada app de la familia comparte el mismo sistema de diseño —negro OLED, dot-matrix y un solo acento rojo— para que se sientan como hermanas. Sin anuncios, sin rastreo, con tus datos siempre en tu dispositivo.",
     "about.v1t": "Minimalismo",
     "about.v1d": "Si un elemento no es contenido ni navegación, sobra. Quitamos antes de añadir.",
@@ -51,6 +52,7 @@ const I18N = {
     "contact.btn": "Enviar correo",
 
     "footer.tagline": "Apps minimalistas para Android",
+    "footer.privacy": "Privacidad",
 
     // privacy.html
     "pv.meta.title": "Política de Privacidad — DotAppsCenter",
@@ -87,19 +89,19 @@ const I18N = {
 
   en: {
     "meta.title": "DotAppsCenter — Minimalist apps",
-    "meta.desc": "DotAppsCenter builds minimalist Android apps with a Nothing-inspired look: monochrome, dot-matrix and essential design.",
+    "meta.desc": "DotAppsCenter builds minimalist Android apps: monochrome, dot-matrix, OLED black and a single red accent. Offline and ad-free.",
 
     "nav.home": "Home",
     "nav.apps": "Apps",
     "nav.about": "About",
     "nav.contact": "Contact",
 
-    "hero.eyebrow": "Android apps · Nothing-inspired",
+    "hero.eyebrow": "Android apps · Minimalist design",
     "hero.title": 'Design stripped<br />down to the <span class="accent">essential</span>.',
     "hero.desc": "At DotAppsCenter we build minimalist apps: OLED black, dot-matrix typography and a single red accent. No noise, only what matters.",
     "hero.cta1": "See our apps",
     "hero.cta2": "About us",
-    "hero.stat1": "apps shipped",
+    "hero.stat1": "apps in the family",
     "hero.stat2": "offline · no ads",
     "hero.stat3": "true OLED black",
 
@@ -108,6 +110,7 @@ const I18N = {
     "apps.subtitle": "A coherent family of everyday tools, all following the Dot Design System.",
     "apps.notes.desc": "Minimalist notes with Markdown, categories, checklists, search and a widget. Your ideas, distraction-free.",
     "apps.podo.desc": "Track walks, runs and bike rides with GPS, a live map and stats. Everything stays local on your device.",
+    "apps.pdf.desc": "Minimalist PDF viewer: opens instantly, zoom, search and links. Fully local, no ads or telemetry.",
     "apps.soon.title": "More on the way",
     "apps.soon.desc": "We're designing new tools with the same principle: radical minimalism and total focus on the user.",
     "apps.soon.tag": "In development",
@@ -116,7 +119,7 @@ const I18N = {
 
     "about.eyebrow": "About",
     "about.title": "Less, but better.",
-    "about.p1": "DotAppsCenter is an independent studio focused on Android apps that respect your attention and your privacy. We're inspired by Nothing's language: monochrome, dots and precision.",
+    "about.p1": "DotAppsCenter is an independent studio focused on Android apps that respect your attention and your privacy. Our visual language is monochrome, dot-matrix and precise.",
     "about.p2": "Every app in the family shares the same design system —OLED black, dot-matrix and a single red accent— so they feel like siblings. No ads, no tracking, your data always on your device.",
     "about.v1t": "Minimalism",
     "about.v1d": "If something isn't content or navigation, it's clutter. We remove before we add.",
@@ -133,6 +136,7 @@ const I18N = {
     "contact.btn": "Send email",
 
     "footer.tagline": "Minimalist apps for Android",
+    "footer.privacy": "Privacy",
 
     // privacy.html
     "pv.meta.title": "Privacy Policy — DotAppsCenter",
